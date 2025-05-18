@@ -1,0 +1,224 @@
+% !TEX root = ./resume.tex
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+% \fancyfoot[C]{\thepage} % Add page numbers at the center of the footer
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\setlength{\footskip}{13.59999pt}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+  \textbf{\Huge Muhammad Ukasha} \\ \vspace{3pt}
+  \small
+  \faMobile \hspace{.5pt} \href{tel:923004761002}{+92 306 025 5284}
+  $|$
+  \faAt \hspace{.5pt} \href{mailto:mukasha.cse@gmail.com}{mukasha.cse@gmail.com}
+  $|$
+  \faLinkedinSquare \hspace{.5pt} \href{www.linkedin.com/in/MUkasha09}{LinkedIn}
+  $|$
+  \faGithub \hspace{.5pt} \href{https://github.com/MUkasha09}{GitHub}
+  $|$
+  \faMapMarker \hspace{.5pt} {Mian Channu, Pakistan}
+\end{center}
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeEducationHeading
+{The Islamia University of Bahawalpur}{Bahawalpur, Pakistan}
+{Bachelor of Science in Computer Systems Engineering; \textbf{CGPA: 3.53/4.00}}{Sep 2021 \textbf{--} Present}
+
+\resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Skills}
+\vspace{2pt}
+
+\resumeSubHeadingListStart
+\small{\item{
+    \textbf{Languages:} Python, C/C++, SQL \\ \vspace{3pt}
+    \textbf{Machine Learning:} scikit-learn, XGBoost, LightGBM, pandas, NumPy \\ \vspace{3pt}
+    \textbf{Deep Learning:} TensorFlow, Keras, PyTorch, CNNs, RNNs, LSTMs \\ \vspace{3pt}
+    \textbf{Natural Language Processing:} NLTK, spaCy, Hugging Face Transformers, TextBlob, BERT, GPT \\ \vspace{3pt}
+    \textbf{Computer Vision:} OpenCV, Image Preprocessing, Data Augmentation \\ \vspace{3pt}
+    \textbf{Model Operations:} Model Evaluation, Hyperparameter Tuning, Cross-Validation, Grid Search \\ \vspace{3pt}
+    \textbf{Tools \& Platforms:} Jupyter Notebook, Google Colab, Kaggle, Git, GitHub, Weights & Biases \\ \vspace{3pt}
+    \textbf{Research & Methodologies:} Sentiment Analysis, Text Classification, Transfer Learning, Prompt Engineering
+}}
+\resumeSubHeadingListEnd
+
+%----------- EXPERIENCE -----------
+
+\section{Experience}
+\vspace{3pt}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bayer}{Remote}
+{Data Analyst}{Jun 2024 -- Sep 2024}
+\resumeItemListStart
+\resumeItem{
+Analyzed agricultural and market datasets to extract actionable insights supporting Bayer’s R\&D and product strategy teams.}
+\resumeItem{
+Built interactive dashboards and data pipelines using Python (pandas, matplotlib), SQL, and Power BI to monitor crop performance metrics.}
+\resumeItem{
+Automated data cleansing and transformation workflows, reducing manual reporting time by 50\%.}
+\resumeItem{
+Collaborated with cross-functional teams to design custom KPIs, ensuring better data-driven decision-making.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{Freelance Project}{Remote}
+{Deep Learning Engineer – Leaf Disease Detection System}{Sep 2024 -- Apr 2025}
+\resumeItemListStart
+\resumeItem{
+Developed a convolutional neural network (CNN)-based model using PyTorch to classify plant leaf diseases from image data with 92\% accuracy.}
+\resumeItem{
+Built a custom dataset pipeline for image preprocessing, augmentation, and training with real-world agricultural data.}
+\resumeItem{
+Integrated the model into a user-facing web interface with real-time prediction and visualization using Flask and OpenCV.}
+\resumeItem{
+Deployed the solution on cloud infrastructure with model logging and result tracking via Weights \& Biases.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------- Projects -----------
+\section{Projects}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Sentiment Analysis using Deep Learning}{Final Year Project}
+{NLP Engineer}{Sep 2024 -- June 2025}
+\resumeItemListStart
+\resumeItem{
+Built and compared multiple NLP models (Naive Bayes, LSTM, BERT) to classify sentiments from social media text data.}
+\resumeItem{
+Preprocessed large-scale datasets using NLTK and spaCy, and implemented tokenization, lemmatization, and vectorization techniques.}
+\resumeItem{
+Evaluated models on accuracy, F1-score, and training time; BERT outperformed others with 93\% F1-score.}
+\resumeItem{
+Documented experimental findings and performance benchmarks as part of the university's final year capstone requirement.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{Awards \& Achievements}
+\vspace{2pt}
+\resumeSubHeadingListStart
+
+\resumeItem{
+\textbf{Leaf Disease Detection System – Deployed AI Solution:} Successfully built and deployed a deep learning model using CNNs for plant disease classification. Integrated the model into a user-facing web application to assist farmers with real-time diagnosis and decision-making.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\end{document}
